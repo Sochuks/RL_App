@@ -6,5 +6,39 @@
 </head>
 <body>
 
+<h2>Sign Up</h2>
+
+<form action="/signup" method="post">
+    {% csrf_token %}
+
+    <label>First Name</label>
+    <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
+    <br>
+
+    <label>Last Name</label>
+    <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
+    <br>
+
+    <label>Username</label>
+    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+    <br>
+
+    <label>Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+    <br>
+
+    <label>Password</label>
+    <input type="password" id="psswd" name="psswd" placeholder="Enter 5 character password" required>
+    <br>
+
+    <label>Confirm Password</label>
+    <input type="password" id="cpsswd" name="cpsswd" placeholder="Re-enter choosen password" required>
+    <br>
+
+    <button type="submit"><a href=""> Sign Up </a></button>
+    <button type="cancel"><a href=""> Cancel </a></button>
+
+</form>
+
 </body>
 </html>
