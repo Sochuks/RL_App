@@ -8,5 +8,21 @@
 
 <h2>Sign In</h2>
 
+<form action="/signin" method="post">
+    {% csrf_token %}
+
+    <label>Username</label>
+    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+    <br>
+
+    <label>Password</label>
+    <input type="password" id="psswd" name="psswd" placeholder="Enter 5 character password" required>
+    <br>
+
+    <button type="submit"> Sign In </button>
+    <button type="cancel"> Cancel </button>
+
+</form>
+
 </body>
 </html>
